@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde0fe; /* Light Pink Background */
+}
+
+header {
+    background-color: #CB6586; /* Light Purple Header */
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-text {
+    background-color: #eadefb; /* Light Blue */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    max-width: 20%; /* Adjust as needed */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Style for the "На главную" button */
+button[onclick*="index.html"] {  /* Selects buttons that navigate to index.html */
+    background-color: #3c00ff; /* Darker blue on hover */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  button[onclick*="index.html"]:hover {
+    background-color: #cdb4db; /* A nice blue color */
+    color: rgb(0, 0, 0);
+  }
+  /* General style for signup buttons */
+  .signup-button {
+    background-color: #ff4400; /* A slightly darker coral */
+      color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows setting width and height */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for signup buttons */
+  .signup-button:hover {
+    background-color: #ffc8dd; /* Coral color */
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Specific style for signup buttons in the header (optional) */
+  header .signup-button {
+      /* Add any header-specific styles here */
+      margin-left: 10px; /* Example: Add some spacing from other header elements */
+  }
+  
+  /* Specific style for signup buttons in the main content (optional) */
+  .main-content .signup-button {
+      /* Add any main content-specific styles here */
+      margin-top: 20px; /* Example: Add spacing from the text */
+  }
+  /* Media query for mobile devices */
+@media (max-width: 600px) {
+  .image-gallery img {
+      max-width: 90%; /* Full width images on mobile */
+      margin: 0 auto; /* center the images */
+  }
+}

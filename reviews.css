@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bde0fe;; /* Light Pink Background */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #CB6586; /* Light Purple Header */
+}
+
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Reviews Section */
+.reviews-container {
+  background-color: #eadefb; /* Light Blue */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.review {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.review:last-child {
+  border-bottom: none; /* Remove border from the last review */
+}
+
+.review .author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review .comment {
+  margin-bottom: 10px;
+}
+
+.customer-photo {
+max-width: 200px; /* Adjust as needed */
+border-radius: 5px;
+margin-top: 10px; /* Add some space between comment and photo */
+}
+
+/* Add Review Form */
+.add-review-form {
+  background-color: #ffc8dd; /* Light Blue */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.add-review-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-review-form input[type="text"],
+.add-review-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+}
+
+.add-review-form input[type="submit"] {
+  background-color: #a2d2ff; /* Green */
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-review-form input[type="submit"]:hover {
+  background-color: #0084ff;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax as needed */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures images fill the space without distortion */
+}
+
+/* Style for the "На главную" button */
+button[onclick*="index.html"] {  /* Selects buttons that navigate to index.html */
+    background-color: #3c00ff; /* Darker blue on hover */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  button[onclick*="index.html"]:hover {
+    background-color: #cdb4db; /* A nice blue color */
+    color: rgb(0, 0, 0);
+  }
+  /* General style for signup buttons */
+  .signup-button {
+    background-color: #ff4400; /* A slightly darker coral */
+      color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows setting width and height */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for signup buttons */
+  .signup-button:hover {
+    background-color: #ffc8dd; /* Coral color */
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Specific style for signup buttons in the header (optional) */
+  header .signup-button {
+      /* Add any header-specific styles here */
+      margin-left: 10px; /* Example: Add some spacing from other header elements */
+  }
+  
+  /* Specific style for signup buttons in the main content (optional) */
+  .main-content .signup-button {
+      /* Add any main content-specific styles here */
+      margin-top: 20px; /* Example: Add spacing from the text */
+  }
+ /* Media query for mobile devices */
+@media (max-width: 600px) {
+  .image-grid {
+      grid-template-columns: 1fr; /* One column on mobile */
+  }
+}

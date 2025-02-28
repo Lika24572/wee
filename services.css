@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde0fe; /* Light Pink Background */
+}
+
+header {
+    background-color: #CB6586; /* Light Purple Header */
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(250px, 1fr)); /* Explicitly define 2 columns */
+}
+
+.service-card {
+    background-color: #eadefb; /* Light Blue Card Background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* For icon positioning */
+}
+
+.service-card h3 {
+    margin-bottom: 5px;
+}
+
+.service-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.price-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff5a91; /* PaleVioletRed or similar */
+}
+
+.service-card img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-width: 40px;
+    opacity: 0.7;
+}
+/* Style for the "На главную" button */
+button[onclick*="index.html"] {  /* Selects buttons that navigate to index.html */
+    background-color: #3c00ff; /* Darker blue on hover */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  button[onclick*="index.html"]:hover {
+    background-color: #cdb4db; /* A nice blue color */
+    color: rgb(0, 0, 0);
+  }
+  /* General style for signup buttons */
+  .signup-button {
+    background-color: #ff4400; /* A slightly darker coral */
+      color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows setting width and height */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for signup buttons */
+  .signup-button:hover {
+    background-color: #ffc8dd; /* Coral color */
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Specific style for signup buttons in the header (optional) */
+  header .signup-button {
+      /* Add any header-specific styles here */
+      margin-left: 10px; /* Example: Add some spacing from other header elements */
+  }
+  
+  /* Specific style for signup buttons in the main content (optional) */
+  .main-content .signup-button {
+      /* Add any main content-specific styles here */
+      margin-top: 20px; /* Example: Add spacing from the text */
+  }
+  /* Media query for mobile devices */
+@media (max-width: 600px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* One column on mobile */
+    }
+  
+    .service-card {
+      width: 80%; /* Adjust card width on mobile */
+      margin: 0 auto; /* Center the cards */
+      margin-bottom: 20px;
+    }
+  
+    .service-card img {
+      max-width: 30px; /* Smaller icon size on mobile */
+    }
+  
+    .price-link {
+      font-size: 0.9em;
+    }
+  }

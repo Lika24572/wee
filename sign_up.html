@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Записаться онлайн</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <header>
+        <h1>Записаться онлайн</h1>
+        <nav>
+            <a href="shop.html">Магазин</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">О нас</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <form action="#" method="post"> <!-- Replace "#" with your form submission URL -->
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="pet_name">Имя питомца:</label><br>
+            <input type="text" id="pet_name" name="pet_name"><br><br>
+
+            <label for="service">Выберите услугу:</label><br>
+            <select id="service" name="service">
+                <option value="grooming">Стрижка</option>
+                <option value="bathing">Вычесывание</option>
+                <option value="nails">Подстригание когтей</option>
+                <option value="other">Экспресс-линька</option>
+            </select><br><br>
+
+            <input type="submit" value="Отправить">
+        </form>
+        <button onclick="window.location.href='index.html'"> На главную </button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

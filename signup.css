@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde0fe /* Light Pink Background */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #d49eff; /* Light Blue */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #d5a7fe;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width */
+}
+
+input[type="submit"] {
+    background-color: #eecaff; /* Green */
+    color: rgb(92, 0, 240);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d57bff;
+}
+/* Style for the "На главную" button */
+button[onclick*="index.html"] {  /* Selects buttons that navigate to index.html */
+    background-color: #3c00ff; /* Darker blue on hover */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  button[onclick*="index.html"]:hover {
+    background-color: #cdb4db; /* A nice blue color */
+    color: rgb(0, 0, 0);
+  }
+  /* Media query for mobile devices */
+@media (max-width: 600px) {
+    form {
+      max-width: 90%;
+    }
+  }

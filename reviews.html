@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+
+    <header>
+        <h1>Отзывы наших посетителей</h1>
+        <nav>
+            <a href="shop.html">Магазин</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">О нас</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+    <br></br>
+    <section class="main-content">
+
+        <div class="reviews-container">
+            <h2>Что говорят наши клиенты</h2>
+            <div class="review">
+                <p class="author">Иван Иванов:</p>
+                <p class="comment">Отличный сервис, моя собака выглядит просто великолепно!</p>
+                <img src="pic/1.jpg" alt="Фото питомца Ивана" class="customer-photo">
+            </div>
+
+            <div class="review">
+                <p class="author">Мария Смирнова:</p>
+                <p class="comment">Очень довольна стрижкой кота, быстро и профессионально.</p>
+                <img src="pic/2.jpg" alt="Фото питомца Марии" class="customer-photo">
+            </div>
+
+            <div class="review">
+                <p class="author">Елизавета Жданова:</p>
+                <p class="comment">Пришла с необычным питомцем, но работники справились на ура!</p>
+                <img src="pic/3jpg.jpg" alt="Фото питомца Марии" class="customer-photo">
+            </div>
+
+            <div class="review">
+                <p class="author">Никита Петров:</p>
+                <p class="comment">У меня непослушная и большая собака, но салон справился просто отлично, придем еще не раз)</p>
+                <img src="pic/5.jpg" alt="Фото питомца Марии" class="customer-photo">
+            </div>
+
+            <div class="review">
+                <p class="author">Екатерина Викторова:</p>
+                <p class="comment">Хороший салон.</p>
+                <img src="pic/6.jpg" alt="Фото питомца Марии" class="customer-photo">
+            </div>
+            <!-- More reviews would go here -->
+        </div>
+
+        <div class="add-review-form">
+            <h2>Оставьте свой отзыв</h2>
+            <form action="#" method="post"> <!-- Replace "#" with your form submission URL -->
+                <label for="author">Ваше имя:</label><br>
+                <input type="text" id="author" name="author"><br><br>
+
+                <label for="comment">Ваш отзыв:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Отправить отзыв">
+            </form>
+        </div>
+        <button class = "signup-button"> Записаться онлайн </button>
+      <button onclick="window.location.href='index.html'"> На главную </button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

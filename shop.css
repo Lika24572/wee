@@ -1,0 +1,99 @@
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde0fe; /* Light Pink Background */
+}
+
+header {
+    background-color: #CB6586; /* Light Purple Header */
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    max-width: 960px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.category {
+    background-color: #eadefb; /* AliceBlue or similar */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.category img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+/* Style for the "На главную" button */
+button[onclick*="index.html"] {  /* Selects buttons that navigate to index.html */
+    background-color: #3c00ff; /* Darker blue on hover */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  button[onclick*="index.html"]:hover {
+    background-color: #cdb4db; /* A nice blue color */
+    color: rgb(0, 0, 0);
+  }
+  /* General style for signup buttons */
+  .signup-button {
+    background-color: #ff4400; /* A slightly darker coral */
+      color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows setting width and height */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for signup buttons */
+  .signup-button:hover {
+    background-color: #ffc8dd; /* Coral color */
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Specific style for signup buttons in the header (optional) */
+  header .signup-button {
+      /* Add any header-specific styles here */
+      margin-left: 10px; /* Example: Add some spacing from other header elements */
+  }
+  
+  /* Specific style for signup buttons in the main content (optional) */
+  .main-content .signup-button {
+      /* Add any main content-specific styles here */
+      margin-top: 20px; /* Example: Add spacing from the text */
+  }
+  @media (max-width: 600px) {
+    .product-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 80%; /* Adjust as needed */
+    }
+}
+
